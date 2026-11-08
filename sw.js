@@ -5,17 +5,17 @@
      when online) and falls back to the saved copy when offline or the network is slow.
    - Icons and the manifest are served from the saved copy for speed.
    To force everyone onto a fresh cache after you change files, bump the number in CACHE. */
-const CACHE = 'trackbase-v1';
+const CACHE = 'trackbase-v2';
 const FILES = [
   './',
   './index.html',
   './manifest.json',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png',
-  './icons/apple-touch-icon.png',
-  './icons/favicon-32.png',
-  './icons/favicon-48.png'
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png',
+  './apple-touch-icon.png',
+  './favicon-32.png',
+  './favicon-48.png'
 ];
 
 self.addEventListener('install', event => {
